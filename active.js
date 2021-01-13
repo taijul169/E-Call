@@ -104,6 +104,16 @@ $(document).ready(function () {
 
     //   sticky-filter-search
     $(".search-filter-wrapper").sticky({bottomSpacing:450,topSpacing:80});
+
+    // form-lebel-floating
+    $(".form-group input").blur(function(){
+        if($(this).val()!= ""){
+            $(this).siblings("label").addClass("active");
+        }
+        else{
+            $(this).siblings("label").removeClass("active");
+        }
+    });
     // // top-scroll-button-active---------------------
     // $(window).scroll(function () {
     //     if ($(window).scrollTop() > 200) {

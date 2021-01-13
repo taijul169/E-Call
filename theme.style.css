@@ -1392,3 +1392,90 @@ search-view-page-start
 .dropzone .dz-preview.dz-error:hover .dz-error-message {
 	display: none;
 }
+
+/*---------------------------------------------------------
+ login-page-start 
+ ---------------------------------------------------------*/
+ .login-right-box h5 {
+	color: #353535;
+	display: block;
+	margin-bottom: 20px;
+}
+.login-right-box .form-group {
+	position: relative;
+}
+.login-right-box form input {
+	width: 100%;
+	border: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-weight: 500;
+	color: #353535de;
+}
+.login-right-box form label {
+	position: absolute;
+	top: 30%;
+	left: 17px;
+	background: #FFF;
+	padding: 0px;
+	font-weight: 500;
+	transition: var(--transition);
+	color: #3535355d;
+	cursor: text;
+
+}
+.login-right-box form input:focus ~ label{
+	top: -20%;
+	color: #353535a6;
+}
+
+.login-right-box form label.active{
+	top: -20%;
+}
+.login-right-box form input[type="submit"]{
+	color: #FFF;
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: 0;
+}
+.divider {
+	display: block;
+	text-align: center;
+	position: relative;
+	color: #acaaaa;
+}
+.divider::before {
+	content: "";
+	position: absolute;
+	width: 45%;
+	height: 2px;
+	background: #f2f2f2;
+	left: 0;
+	top: 50%;
+}
+.divider::after {
+	content: "";
+	position: absolute;
+	width: 45%;
+	height: 2px;
+	background: #f2f2f2;
+	right: 0;
+	top: 50%;
+}
+.social-login-option .btn {
+	width: 49%;
+	font-size: 12px;
+	font-weight: 600;
+}
+.form-group p {
+	margin-top: 20px;
+	font-size: 13px;
+}
+.forgot-pass {
+	font-size: 12px;
+	margin-bottom: -3px;
+}
+.login-right-box h5 a {
+	color: var(--themeColor-light-blue);
+	font-size: 14px;
+}

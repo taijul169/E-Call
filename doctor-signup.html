@@ -109,9 +109,9 @@
                        <div class="breadcrumb-left">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li>Login</li>
+                            <li>Sign Up</li>
                         </ul>
-                        <h4><span>User Login</span></h4>
+                        <h4><span>Doctor Sign Up</span></h4>
                        </div>
                    </div>
                 </div>
@@ -134,24 +134,26 @@
                       <div class="card">
                           <div class="card-body">
                             <form action="">
-                                <h5>Login</h5>
-                                <!-- email-field -->
+                                <h5> Doctor SignUp <a href="patient-login.html" class="float-right">Not a Doctor?</a></h5>
+                               
+                                <!-- Name-field -->
                                 <div class="form-group">
-                                    <input type="text" name="l_email" id="l_email">
-                                    <label for="email">Email</label>
+                                    <input type="text" name="register_name" id="register_name">
+                                    <label for="Name">Name</label>
                                 </div>
-                                <!-- Password-field -->
+                                <!-- Mobile No-field -->
                                 <div class="form-group">
-                                    <input type="password"  name="l_password" id="l_password">
+                                    <input type="text"  name="register_phone" id="register_phone">
+                                    <label for="phone">Phone</label>
+                                </div>
+                                <!-- create-password -->
+                                <div class="form-group">
+                                    <input type="password"  name="register_password" id="register_password">
                                     <label for="password">Password</label>
                                 </div>
-                                <!-- forgot-password -->
+                                 <!-- Submit- -->
                                 <div class="form-group">
-                                    <a href="#" class="forgot-pass">Forgot Password?</a>
-                                </div>
-                                 <!-- Submit-password -->
-                                <div class="form-group">
-                                    <input type="submit" class="submit-button" value="Login" name="l_login" id="l_login">
+                                    <input type="submit" class="submit-button" value="Sign Up" name="register_sighnup" id="l_login">
                                 </div>
                                 <!-- or-devider -->
                                 <div class="form-group">
@@ -164,7 +166,7 @@
                                 </div>
                                 <!-- social-media-login-option -->
                                 <div class="form-group text-center">
-                                    <p>dont't have an account?<a href="#">Register</a></p>
+                                    <p>Already have an account?<a href="login.html">Login</a></p>
                                 </div>
                             </form>
                           </div>
