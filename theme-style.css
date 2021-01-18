@@ -40,9 +40,7 @@
 	-webkit-box-shadow: 0 0.5rem 1rem rgba(1, 164, 121, .30) !important;
 	box-shadow: 0 0.5rem 1rem rgba(1, 164, 121, .30) !important;
 }
-input,textarea,select:focus{
-	outline: none;
-}
+
 body {
   padding: 0;
   margin: 0;
@@ -55,7 +53,12 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+input,textarea, select{
+	width: 100%;
+	padding: 10px 15px;
+	border: 1px solid #e6e3e3;
+	border-radius: 4px;
+}
 button {
   outline: 0 !important;
 }
@@ -78,6 +81,9 @@ textarea:focus{
 }
 select:focus{
 	outline: 0 !important;
+}
+select{
+	appearance: none;
 }
 .ptb-100 {
 	padding-top: 0px;
