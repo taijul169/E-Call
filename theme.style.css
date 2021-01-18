@@ -1,4 +1,5 @@
 @import "signup.style.css"; 
+@import "doctor-dashboard.css"; 
 /* Default CSS
 =================================================*/
 /* preloader */
@@ -28,12 +29,19 @@
   --text-hover-color:#FFD15C;
 
 }
+.bg-light-blue{
+	background-color: #10E0FF;
+	color: #FFF;
+}
 .navbar-nav .nav-item.dropdown .dropdown-menu {
 	background: #ffffff;
 	padding: 0;
 	border: none;
 	-webkit-box-shadow: 0 0.5rem 1rem rgba(1, 164, 121, .30) !important;
 	box-shadow: 0 0.5rem 1rem rgba(1, 164, 121, .30) !important;
+}
+input,textarea,select:focus{
+	outline: none;
 }
 body {
   padding: 0;
@@ -291,8 +299,6 @@ header.fixed-nav {
 }
 .common-button {
 	display: inline-block;
-	
-	
 }
 
 .txt {
@@ -1478,4 +1484,53 @@ search-view-page-start
 .login-right-box h5 a {
 	color: var(--themeColor-light-blue);
 	font-size: 14px;
+}
+
+/*-------------------------------------------------------
+ booking-page-start 
+ --------------------------------------------------------*/
+ .row.doc-booking-info input {
+	width: 100%;
+	width: 100%;
+	border: 1px solid #dbdbdb;
+	padding: 10px;
+	border-radius: 4px;
+	position: relative;
+}
+.row.doc-booking-info label {
+	background-color: #FFF;
+	padding: 5px 8px;
+	position: absolute;
+	top: -23%;
+	left: 5%;
+	z-index: 2;
+}
+.pateint-checkup-time.mt-3 ul li {
+	font-size: 12px;
+}
+.row.doc-booking-info .sing-doc-img {
+	width: 225px;
+}
+/* 
+booking-success */
+.check-icon i {
+	background:#09e5ab;
+	display: inline-block;
+	padding: 20px;
+	border-radius: 50%;
+	font-size: 32px;
+	font-weight: ;
+	color: #FFF;
+	margin-bottom: 20px;
+}
+.success-message-wrapper .submit-button {
+	width: 150px; 
+	margin: 35px auto;
+	background-color: #09e5ab;
+}
+.invoice-text-info span {
+	font-weight: 500;
+}
+.invoice-wrapper table tr td{
+	font-weight: 500;
 }

@@ -104,6 +104,7 @@ $(document).ready(function () {
 
     //   sticky-filter-search
     $(".search-filter-wrapper").sticky({bottomSpacing:450,topSpacing:80});
+    $(".dash-left").sticky({bottomSpacing:500,topSpacing:80});
 
     // form-lebel-floating
     $(".form-group input").blur(function(){
@@ -114,6 +115,18 @@ $(document).ready(function () {
             $(this).siblings("label").removeClass("active");
         }
     });
+    // nav-link-active
+	$(".doc-dash-page-link .nav-item a").click(function(event) { 
+        var $this = $(this);
+        $(".doc-dash-page-link .nav-item a").removeClass("active");  
+         $this.removeClass('active');
+         $($this).addClass("active"); 
+     });
+
+
+
+
+
     // // top-scroll-button-active---------------------
     // $(window).scroll(function () {
     //     if ($(window).scrollTop() > 200) {
