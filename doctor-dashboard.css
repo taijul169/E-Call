@@ -141,12 +141,10 @@ td{
 	color: #282525;
 	font-weight: 500;
 }
-.row.doctor-form .form-group input, select {
+.form-group.problem-des textarea {
 	width: 100%;
-	border: 1px solid #dbdbdb;
-	padding: 10px;
+	border: 1px solid #dbdada;
 	border-radius: 4px;
-	appearance: none;
 }
 .about-me {
 	padding: 20px;
